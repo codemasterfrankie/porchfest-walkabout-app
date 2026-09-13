@@ -1,0 +1,23 @@
+import { StyleSheet, Text, View } from 'react-native';
+
+type BandScreenProps = {
+    bandName: string;
+
+};
+
+export default function BandScreen({ bandName }: BandScreenProps) {
+    return (
+        <View style={styles.container}>
+            <Text style={styles.title}>You're newr:</Text>
+            <Text style={styles.bandName}>{bandName}</Text>
+
+        </View>
+    );
+}
+
+const styles = StyleSheet.create({
+    container: {flex: 1, justifyContent: 'center', alignItems: 'center'},
+    title: {fontSize: 20},
+    bandName: {fontSize: 32, fontWeight: 'bold', marginTop: 8},
+
+});
