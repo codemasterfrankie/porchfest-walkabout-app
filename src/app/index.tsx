@@ -1,13 +1,17 @@
 import * as Location from 'expo-location';
 import { useEffect, useState } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+//import { StyleSheet, Text, View } from 'react-native';
+import BandScreen from '../components/BandScreen';
 import ComingSoonScreen from '../components/ComingSoonScreen';
 import SeeYouNextYearScreen from '../components/SeeYouNextYearScreen';
+import { PORCHES } from '../data/porches';
+import { getDistanceInMeters } from '../utils/distance';
 
 // below: type-checked Date objects
 // actual start and end date for ithaca porchfest 2026
 const FESTIVAL_START = new Date('2026-09-20T12:00:00');
 const FESTIVAL_END = new Date('2026-09-20T18:00:00');
+const PROXIMITY_THRESHOLD_METERS = 50;
 
 export default function Index() {
   // below var will either hold a location object or null
@@ -44,6 +48,7 @@ export default function Index() {
     return <SeeYouNextYearScreen />;
   }
 
+  /**
   // temp debug screen to confirm gps working
   return (
     <View style={styles.container}>
@@ -65,3 +70,27 @@ const styles = StyleSheet.create({
   label: {fontSize: 18, fontWeight: 'bold', marginBottom: 12},
   error: {color: 'red'},
 });
+*/
+
+// festival is active, check dist to porch
+if (location) {
+  // "nearestPorch" will either be Porch object or undefined
+  const nearestPorch = PORCHES.find((porch) => {
+    const distance = getDistanceInMeters(
+      location.coords.latitude,
+      location.coords.longitude,
+      porch.latitude,
+      porch.longitude
+    );
+    return distance <= PROXIMITY_THRESHOLD_METERS;
+  });
+
+  if (nearestPorch) {
+    return <BandScreen bandName={nearestPorch.bandName} />;
+
+  }
+}
+
+// if during fest but not near any porch
+return <ComingSoonScreen />;
+}
