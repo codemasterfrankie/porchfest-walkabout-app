@@ -7,7 +7,7 @@ const FESTIVAL_START = new Date('2026-09-20T12:00:00');
 const FESTIVAL_END = new Date('2026-09-20T18:00:00');
 
 export default function Index() {
-  const now = new Date('2026-09-20T18-10:00');
+  const now = new Date('2026-09-20T18:10:00');
 
   if (now < FESTIVAL_START) {
     return <ComingSoonScreen />;
