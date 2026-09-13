@@ -83,6 +83,7 @@ if (location) {
       porch.latitude,
       porch.longitude
     );
+    console.log(`Distance to ${porch.name}:`, distance, 'meters');
     return distance <= PROXIMITY_THRESHOLD_METERS;
   });
 

@@ -8,7 +8,7 @@ type BandScreenProps = {
 export default function BandScreen({ bandName }: BandScreenProps) {
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>You're newr:</Text>
+            <Text style={styles.title}>You're near:</Text>
             <Text style={styles.bandName}>{bandName}</Text>
 
         </View>
