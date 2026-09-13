@@ -30,6 +30,7 @@ export default function Index() {
 
       // if permission allowed, get location
       const currentLocation = await Location.getCurrentPositionAsync({});
+      console.log('GOT LOCATION:', currentLocation.coords.latitude, currentLocation.coords.longitude);
       setLocation(currentLocation);
     }
 
