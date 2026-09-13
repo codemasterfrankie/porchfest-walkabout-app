@@ -13,8 +13,8 @@ export const PORCHES: Porch[] = [
         id: '1',
         name: "Maple Street Porth",
         bandName: "The Wandering Fiddles",
-        latitude: 42.4005,
-        longitude: -76.5005,
+        latitude: 42.441,
+        longitude: -76.491,
     },
     {
         id: '2',
