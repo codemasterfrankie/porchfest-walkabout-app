@@ -1,3 +1,5 @@
+import * as Location from 'expo-location';
+import { useEffect, useState } from 'react';
 import ComingSoonScreen from '../components/ComingSoonScreen';
 import SeeYouNextYearScreen from '../components/SeeYouNextYearScreen';
 
@@ -7,6 +9,30 @@ const FESTIVAL_START = new Date('2026-09-20T12:00:00');
 const FESTIVAL_END = new Date('2026-09-20T18:00:00');
 
 export default function Index() {
+  // below var will either hold a location object or null
+  // must have this so TS doesn't guess the type from the initial value
+  const [location, setLocation] = useState<Location.LocationObject | null>(null);
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function getLocation() {
+      const {status} = await Location.requestForegroundPermissionsAsync();
+      // if location permission denied
+      if (status !== 'granted') {
+        setErrorMsg('Permission to access location was denied');
+        return;
+      }
+
+      // if permission allowed, get location
+      const currentLocation = await Location.getCurrentPositionAsync({});
+      setLocation(currentLocation);
+    }
+
+    getLocation();
+  }, []);
+  // the [] is the "dependency array", controls when the code inside useEffect runs
+  // get user location once (will update)
+
   const now = new Date();
 
   if (now < FESTIVAL_START) {
