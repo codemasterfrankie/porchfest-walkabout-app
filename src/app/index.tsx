@@ -1,5 +1,6 @@
 import * as Location from 'expo-location';
 import { useEffect, useState } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import ComingSoonScreen from '../components/ComingSoonScreen';
 import SeeYouNextYearScreen from '../components/SeeYouNextYearScreen';
 
@@ -33,7 +34,7 @@ export default function Index() {
   // the [] is the "dependency array", controls when the code inside useEffect runs
   // get user location once (will update)
 
-  const now = new Date();
+  const now = new Date('2026-09-20T13:00:00');
 
   if (now < FESTIVAL_START) {
     return <ComingSoonScreen />;
@@ -43,5 +44,24 @@ export default function Index() {
     return <SeeYouNextYearScreen />;
   }
 
-  return <ComingSoonScreen />;
+  // temp debug screen to confirm gps working
+  return (
+    <View style={styles.container}>
+      <Text styles={styles.label}>Debug: Location Data</Text>
+      {errorMsg && <Text style={styles.error}>{errorMsg}</Text>}
+      {location && (
+        <>
+          <Text>Latitude: {location.coords.latitude}</Text>
+          <Text>Longitude: {location.coords.longitude}</Text>
+        </>
+      )}
+      {!location && !errorMsg && <Text>Fetching location...</Text>}
+    </View>
+  );
 }
+
+const styles = StyleSheet.create({
+  container: {flex:1, justifyContent: 'center', alignItems: 'center'},
+  label: {fontSize: 18, fontWeight: 'bold', marginBottom: 12},
+  error: {color: 'red'},
+});
