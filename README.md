@@ -7,7 +7,7 @@ This app's job is to augment your [Porchfest](https://www.porchfest.org/) experi
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app). I utilized LLMs to research and choose the right framework for this app and landed on Expo because of the simplicity in deploying both to Apple and Android IOS.
 
-The development of this app was part software development exploration, part local-music passion project, part agentic programming experimentation.
+The development of this app was part mobile development exploration, part local-music passion project, part agentic programming experimentation. Because my baseline knowledge of mobile development and the tools needed for it were minimal, I utilized LLMs to figure out the folder structure and plugins needed to build this app.
 
 ## Get started
 
