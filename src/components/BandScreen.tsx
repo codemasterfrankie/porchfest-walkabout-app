@@ -1,10 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 
+// setting attributes of band screen
 type BandScreenProps = {
     bandName: string;
-
 };
 
+// function for displaying the band information
 export default function BandScreen({ bandName }: BandScreenProps) {
     return (
         <View style={styles.container}>
@@ -15,6 +16,7 @@ export default function BandScreen({ bandName }: BandScreenProps) {
     );
 }
 
+// styling for the band screen
 const styles = StyleSheet.create({
     container: {flex: 1, justifyContent: 'center', alignItems: 'center'},
     title: {fontSize: 20},

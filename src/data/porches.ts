@@ -1,4 +1,5 @@
 // defines the exact shape every porch object must have
+// specific attributes
 export type Porch = {
     id: string;
     name: string;
@@ -8,6 +9,7 @@ export type Porch = {
 };
 
 // test porches below
+// array of porches is created below
 export const PORCHES: Porch[] = [
     {
         id: '1',
