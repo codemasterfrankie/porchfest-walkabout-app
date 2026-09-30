@@ -16,10 +16,8 @@ res = cf_requests.get(
 
 soup = BeautifulSoup(res.content, 'html.parser')
 
-content = soup.find('div', class_='strong')
-if content:
-    for para in content.find.all('p'):
-        print(para.text.strip())
-    else:
-        print("nothing found")
+for map_link in soup.select('a[href*="google.com/maps"]'):
+        block = map_link.find_parent("p") or map_link.parent
+        print("PORCH: ", block)
+
 
