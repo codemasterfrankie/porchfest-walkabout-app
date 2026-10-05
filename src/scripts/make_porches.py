@@ -1,5 +1,3 @@
-
-Make porches · PY
 """
 Turn performers_geo.json into src/data/porches.ts for the app.
  
