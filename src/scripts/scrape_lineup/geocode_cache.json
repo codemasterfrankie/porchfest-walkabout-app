@@ -1,0 +1,413 @@
+{
+  "100 Franklin St, Ithaca, NY": [
+    42.4509219,
+    -76.5011307
+  ],
+  "1019 N Cayuga St, Ithaca, NY": [
+    42.4517404,
+    -76.4993087
+  ],
+  "102 Hancock St, Ithaca, NY": [
+    42.4484706,
+    -76.5010728
+  ],
+  "105 King St, Ithaca, NY": [
+    42.4500926,
+    -76.4968669
+  ],
+  "106 Short St, Ithaca, NY": [
+    42.4510549,
+    -76.5017748
+  ],
+  "107 E Marshall St, Ithaca, NY": [
+    42.4459627,
+    -76.4986491
+  ],
+  "107 Sears St, Ithaca, NY": [
+    42.4431398,
+    -76.497918
+  ],
+  "107 Utica St, Ithaca, NY": [
+    42.4453738,
+    -76.4979307
+  ],
+  "108 Farm St, Ithaca, NY": [
+    42.445121,
+    -76.4987064
+  ],
+  "108 Utica St, Ithaca, NY": [
+    42.4453832,
+    -76.4984259
+  ],
+  "110 W Marshall St, Ithaca, NY": [
+    42.4462211,
+    -76.4999929
+  ],
+  "111 1st St, Ithaca, NY": null,
+  "111 2nd St, Ithaca, NY": null,
+  "111 Auburn St, Ithaca, NY": [
+    42.4478294,
+    -76.5004396
+  ],
+  "111 W Yates St, Ithaca, NY": [
+    42.447022,
+    -76.5002798
+  ],
+  "112 W Marshall St, Ithaca, NY": [
+    42.4462382,
+    -76.5001784
+  ],
+  "115 1st St, Ithaca, NY": null,
+  "117 W Yates St, Ithaca, NY": [
+    42.4470125,
+    -76.500523
+  ],
+  "118 Cascadilla Ave, Ithaca, NY": [
+    42.4442697,
+    -76.497781
+  ],
+  "118 E York St, Ithaca, NY": [
+    42.453634,
+    -76.4986714
+  ],
+  "118 Lake Ave, Ithaca, NY": [
+    42.4452488,
+    -76.5003465
+  ],
+  "119 1st St, Ithaca, NY": null,
+  "119 Cascadilla St, Ithaca, NY": [
+    42.4443929,
+    -76.5004557
+  ],
+  "119 Farm St, Ithaca, NY": [
+    42.444807,
+    -76.4979939
+  ],
+  "121 Cascadilla Ave, Ithaca, NY": [
+    42.443957,
+    -76.497783
+  ],
+  "121 W Falls St, Ithaca, NY": [
+    42.4524999,
+    -76.5014469
+  ],
+  "123 E Falls St, Ithaca, NY": [
+    42.4526228,
+    -76.4981542
+  ],
+  "202 W Yates St, Ithaca, NY": [
+    42.4472523,
+    -76.5008697
+  ],
+  "204 E Marshall St, Ithaca, NY": [
+    42.4462768,
+    -76.4980131
+  ],
+  "205 E Jay St, Ithaca, NY": [
+    42.4505384,
+    -76.4981286
+  ],
+  "205 Linn St, Ithaca, NY": [
+    42.4453671,
+    -76.4944908
+  ],
+  "205 Utica St, Ithaca, NY": [
+    42.4465306,
+    -76.4980226
+  ],
+  "206 2nd St, Ithaca, NY": null,
+  "206 E Lewis St, Ithaca, NY": [
+    42.4497059,
+    -76.4979996
+  ],
+  "206 Lake Ave, Ithaca, NY": [
+    42.4461304,
+    -76.5009093
+  ],
+  "207 Adams St, Ithaca, NY": [
+    42.4489463,
+    -76.5018162
+  ],
+  "209 Adams St, Ithaca, NY": [
+    42.4489224,
+    -76.5019213
+  ],
+  "210 1st St, Ithaca, NY": null,
+  "210 Dey St, Ithaca, NY": [
+    42.4497487,
+    -76.5020839
+  ],
+  "210 Utica St, Ithaca, NY": [
+    42.4466887,
+    -76.4984621
+  ],
+  "213 W Lincoln St, Ithaca, NY": [
+    42.4515228,
+    -76.5015162
+  ],
+  "217 Utica St, Ithaca, NY": [
+    42.446954,
+    -76.4980699
+  ],
+  "218 Utica St, Ithaca, NY": [
+    42.446945,
+    -76.4985453
+  ],
+  "219 1st St, Ithaca, NY": null,
+  "219 Auburn St, Ithaca, NY": [
+    42.4493432,
+    -76.5005145
+  ],
+  "220 E Falls St, Ithaca, NY": [
+    42.4530006,
+    -76.4966878
+  ],
+  "306 E Yates St, Ithaca, NY": [
+    42.4474694,
+    -76.4966945
+  ],
+  "307 Auburn St, Ithaca, NY": [
+    42.4499119,
+    -76.5006235
+  ],
+  "308 E Marshall St, Ithaca, NY": [
+    42.4463169,
+    -76.4965054
+  ],
+  "308 Utica St, Ithaca, NY": [
+    42.4477243,
+    -76.498568
+  ],
+  "310 Linn St, Ithaca, NY": [
+    42.4467435,
+    -76.4949812
+  ],
+  "313 Utica St, Ithaca, NY": [
+    42.4479549,
+    -76.4981434
+  ],
+  "314 Farm St, Ithaca, NY": [
+    42.4452537,
+    -76.494876
+  ],
+  "317 Auburn St, Ithaca, NY": [
+    42.4502297,
+    -76.5005927
+  ],
+  "318 Lake Ave, Ithaca, NY": [
+    42.447603,
+    -76.5020666
+  ],
+  "319 Linn St, Ithaca, NY": [
+    42.4471783,
+    -76.4945499
+  ],
+  "326 E Falls St, Ithaca, NY": [
+    42.4530693,
+    -76.4948701
+  ],
+  "402 N Aurora St, Ithaca, NY": [
+    42.4429803,
+    -76.4961494
+  ],
+  "405 N Tioga St, Ithaca, NY": [
+    42.4431125,
+    -76.4968102
+  ],
+  "406 E Yates St, Ithaca, NY": [
+    42.4475135,
+    -76.4954572
+  ],
+  "412 E Marshall St, Ithaca, NY": [
+    42.4463574,
+    -76.495056
+  ],
+  "412 N Aurora St, Ithaca, NY": [
+    42.4436375,
+    -76.4961199
+  ],
+  "412 Utica St, Ithaca, NY": [
+    42.4490781,
+    -76.4985972
+  ],
+  "413 Auburn St, Ithaca, NY": [
+    42.4514018,
+    -76.500693
+  ],
+  "413 Utica St, Ithaca, NY": [
+    42.4490935,
+    -76.4982076
+  ],
+  "415 N Tioga St, Ithaca, NY": [
+    42.4435343,
+    -76.4967344
+  ],
+  "416 N Aurora St, Ithaca, NY": [
+    42.443911,
+    -76.4961322
+  ],
+  "417 Utica St, Ithaca, NY": [
+    42.4492856,
+    -76.498201
+  ],
+  "430 N Cayuga St, Ithaca, NY": [
+    42.4444636,
+    -76.4994478
+  ],
+  "432 N Tioga St, Ithaca, NY": [
+    42.4443222,
+    -76.4973527
+  ],
+  "435 N Aurora St, Ithaca, NY": [
+    42.4442345,
+    -76.4955718
+  ],
+  "435 N Geneva St, Ithaca, NY": [
+    42.4443035,
+    -76.5007335
+  ],
+  "449 N Aurora St, Ithaca, NY": [
+    42.4449054,
+    -76.4956381
+  ],
+  "500 N Cayuga St, Ithaca, NY": [
+    42.4456688,
+    -76.4996603
+  ],
+  "502 Utica St, Ithaca, NY": [
+    42.4496978,
+    -76.4987072
+  ],
+  "507 N Aurora St, Ithaca, NY": [
+    42.4453467,
+    -76.4957008
+  ],
+  "509 Utica St, Ithaca, NY": [
+    42.4501477,
+    -76.4983199
+  ],
+  "511 N Aurora St, Ithaca, NY": [
+    42.4455104,
+    -76.4957
+  ],
+  "513 Willow Ave, Ithaca, NY": [
+    42.4495613,
+    -76.5028201
+  ],
+  "515 N Aurora St, Ithaca, NY": [
+    42.44566,
+    -76.4957371
+  ],
+  "516 N Tioga St, Ithaca, NY": [
+    42.445824,
+    -76.4973571
+  ],
+  "517 N Tioga St, Ithaca, NY": [
+    42.4459479,
+    -76.4968657
+  ],
+  "517 Willow Ave, Ithaca, NY": [
+    42.4496373,
+    -76.5029219
+  ],
+  "520 N Tioga St, Ithaca, NY": [
+    42.4460064,
+    -76.4973734
+  ],
+  "529 Linn St, Ithaca, NY": [
+    42.4503372,
+    -76.4946699
+  ],
+  "608 Utica St, Ithaca, NY": [
+    42.4511809,
+    -76.49879
+  ],
+  "611 N Tioga St, Ithaca, NY": [
+    42.4469137,
+    -76.4969943
+  ],
+  "613 N Tioga St, Ithaca, NY": [
+    42.4470614,
+    -76.4970015
+  ],
+  "614 N Tioga St, Ithaca, NY": [
+    42.4468342,
+    -76.4974863
+  ],
+  "615 Willow Ave, Ithaca, NY": [
+    42.4506976,
+    -76.5034872
+  ],
+  "619 N Aurora St, Ithaca, NY": [
+    42.4472033,
+    -76.4957901
+  ],
+  "701 N Aurora St, Ithaca, NY": [
+    42.4475301,
+    -76.4957344
+  ],
+  "701 N Tioga St, Ithaca, NY": [
+    42.4474709,
+    -76.4970063
+  ],
+  "705 N Aurora St, Ithaca, NY": [
+    42.4476202,
+    -76.4958213
+  ],
+  "705 N Tioga St, Ithaca, NY": [
+    42.4476192,
+    -76.4969977
+  ],
+  "711 N Aurora St, Ithaca, NY": [
+    42.4478762,
+    -76.4958269
+  ],
+  "711 N Tioga St, Ithaca, NY": [
+    42.4479763,
+    -76.497053
+  ],
+  "712 N Tioga St, Ithaca, NY": [
+    42.4479428,
+    -76.4974928
+  ],
+  "713 N Aurora St, Ithaca, NY": [
+    42.4479992,
+    -76.4958316
+  ],
+  "804 N Cayuga St, Ithaca, NY": [
+    42.4486438,
+    -76.4997877
+  ],
+  "804 N Tioga St, Ithaca, NY": [
+    42.4487197,
+    -76.4975508
+  ],
+  "809 N Aurora St, Ithaca, NY": [
+    42.4489409,
+    -76.495873
+  ],
+  "816 N Tioga St, Ithaca, NY": [
+    42.4494491,
+    -76.4976156
+  ],
+  "818 N Aurora St, Ithaca, NY": [
+    42.449112,
+    -76.4964646
+  ],
+  "902 N Tioga St, Ithaca, NY": [
+    42.4497162,
+    -76.4976437
+  ],
+  "914 N Tioga St, Ithaca, NY": [
+    42.4503187,
+    -76.4976637
+  ],
+  "917 N Cayuga St, Ithaca, NY": [
+    42.4505404,
+    -76.4993623
+  ],
+  "920 N Tioga St, Ithaca, NY": [
+    42.4505498,
+    -76.4976759
+  ]
+}

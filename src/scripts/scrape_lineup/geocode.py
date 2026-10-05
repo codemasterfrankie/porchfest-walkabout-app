@@ -30,6 +30,22 @@ def clean_address(performer: dict) -> str:
     return f"{performer['address']}, Ithaca, NY"
 
 
+ORDINALS = {"1st": "First", "2nd": "Second", "3rd": "Third", "4th": "Fourth",
+            "5th": "Fifth", "6th": "Sixth", "7th": "Seventh", "8th": "Eighth"}
+
+
+def address_variants(addr: str) -> list[str]:
+    # OpenStreetMap often spells numbered streets out ("First Street"), so if the
+    # abbreviated form fails, try again with the ordinal and "Street" written out.
+    variants = [addr]
+    words = addr.replace(",", " ,").split()
+    if any(w in ORDINALS for w in words):
+        spelled = " ".join(ORDINALS.get(w, w) for w in words).replace(" ,", ",")
+        variants.append(spelled)
+        variants.append(spelled.replace(" St,", " Street,"))
+    return variants
+
+
 def main():
     with open("performers.json", encoding="utf-8") as f:
         performers = json.load(f)
@@ -43,11 +59,16 @@ def main():
     geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1.1)
 
     addresses = sorted({clean_address(p) for p in performers})
-    todo = [a for a in addresses if a not in cache]
+    # Look up anything new, and retry anything that failed last time (cached as null)
+    todo = [a for a in addresses if cache.get(a) is None]
     print(f"{len(addresses)} unique porches, {len(todo)} to look up (~{len(todo)} sec)")
 
     for addr in todo:
-        loc = geocode(addr)
+        loc = None
+        for variant in address_variants(addr):
+            loc = geocode(variant)
+            if loc:
+                break
         cache[addr] = [loc.latitude, loc.longitude] if loc else None
         print(("OK   " if loc else "MISS ") + addr)
 
