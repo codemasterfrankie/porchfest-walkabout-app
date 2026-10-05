@@ -96,8 +96,8 @@
     "map_url": "https://www.google.com/maps/place/111+1st+St,+Ithaca,+NY",
     "website": "https://www.ambermartinmusic.net/",
     "description": "Amber Martin & The Fruit Stand is an indie folk band made up of 4 close friends. With beautiful harmonies, electric guitar, upright bass, and drums to sprinkle in a unique texture of their own.",
-    "lat": null,
-    "lon": null
+    "lat": 42.4450934,
+    "lon": -76.5009152
   },
   {
     "name": "Analog Breakdown",
@@ -106,8 +106,8 @@
     "map_url": "https://www.google.com/maps/place/111+1st+St,+Ithaca,+NY",
     "website": "https://analogbreakdown.com/",
     "description": "Ithaca-based Analog Breakdown is a five-piece string band that plays a range of folk genres including bluegrass, Celtic, and Americana.",
-    "lat": null,
-    "lon": null
+    "lat": 42.4450934,
+    "lon": -76.5009152
   },
   {
     "name": "Andrew Anderson Frankel",
@@ -396,8 +396,8 @@
     "map_url": "https://www.google.com/maps/place/111+2nd+St,+Ithaca,+NY",
     "website": null,
     "description": "A couple of non-biologically related, but nonetheless intimate cousins with some indie originals and silly covers.",
-    "lat": null,
-    "lon": null
+    "lat": 42.4450378,
+    "lon": -76.5023148
   },
   {
     "name": "Cuchulain",
@@ -406,8 +406,8 @@
     "map_url": "https://www.google.com/maps/place/210+1st+St,+Ithaca,+NY",
     "website": "https://www.cuchulainkelly.com/",
     "description": "Party people of the world, unite!",
-    "lat": null,
-    "lon": null
+    "lat": 42.4458463,
+    "lon": -76.5020941
   },
   {
     "name": "Dad On Arrival",
@@ -566,8 +566,8 @@
     "map_url": "https://www.google.com/maps/place/219+1st+St,+Ithaca,+NY",
     "website": null,
     "description": "Sing/Songwriter – Songs about the continuing process of growing up and coming into oneself.",
-    "lat": null,
-    "lon": null
+    "lat": 42.4463842,
+    "lon": -76.5020127
   },
   {
     "name": "Ha’penny & Night Society",
@@ -586,8 +586,8 @@
     "map_url": "https://www.google.com/maps/place/206+2nd+St,+Ithaca,+NY",
     "website": "https://www.youtube.com/playlist?list=OLAK5uy_lGkOgnvDg3L8JEQ0izcSRTbF22pzqoCF8",
     "description": "My music is folk and classical inspired, and it explores themes of resistance, love, complacency, community, and nature. Our sound is a mix of cello, guitar, ukulele, vocals, and hand drumming. We have a fun, chill, and genuine energy.",
-    "lat": null,
-    "lon": null
+    "lat": 42.4452091,
+    "lon": -76.5029573
   },
   {
     "name": "ICO Brass Quintet",
@@ -866,8 +866,8 @@
     "map_url": "https://www.google.com/maps/place/219+1st+St,+Ithaca,+NY",
     "website": null,
     "description": "Songs from the heart. Eclectic balladeer singing folk, country, pop, jazz, classical. Accompanied by guitar.",
-    "lat": null,
-    "lon": null
+    "lat": 42.4463842,
+    "lon": -76.5020127
   },
   {
     "name": "Mary Bentley",
@@ -1036,8 +1036,8 @@
     "map_url": "https://www.google.com/maps/place/210+1st+St,+Ithaca,+NY",
     "website": "https://openswimband.com/",
     "description": "90s-inspired Alt Rock Bubblegrunge goodness",
-    "lat": null,
-    "lon": null
+    "lat": 42.4458463,
+    "lon": -76.5020941
   },
   {
     "name": "Owl Lantern",
@@ -1086,8 +1086,8 @@
     "map_url": "https://www.google.com/maps/place/115+1st+St,+Ithaca,+NY",
     "website": "https://www.youtube.com/@Peregrine_theband",
     "description": "Peregrine is a four piece rock band that plays originals and some covers based in blues, classic rock, and many other genres.",
-    "lat": null,
-    "lon": null
+    "lat": 42.4452009,
+    "lon": -76.5010671
   },
   {
     "name": "Phil Way and Friends",
@@ -1236,8 +1236,8 @@
     "map_url": "https://www.google.com/maps/place/119+1st+St,+Ithaca,+NY",
     "website": null,
     "description": "laid back acoustic covers",
-    "lat": null,
-    "lon": null
+    "lat": 42.4453185,
+    "lon": -76.5011585
   },
   {
     "name": "Rosalina Maassen",
@@ -1496,8 +1496,8 @@
     "map_url": "https://www.google.com/maps/place/119+1st+St,+Ithaca,+NY",
     "website": null,
     "description": "Mix of Americana, Indie Folk and Singer/Songwriter styles. A trio with acoustic guitar (Angela Rudert), electric guitar (Susan Terwilliger) and electric bass (David Bulatek), tasteful vocal harmonies and instrumental melodies woven throughout.",
-    "lat": null,
-    "lon": null
+    "lat": 42.4453185,
+    "lon": -76.5011585
   },
   {
     "name": "Súper Madame Band",
