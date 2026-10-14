@@ -1,13 +1,19 @@
 # Welcome to the Porchfest Walkabout App
 
-This app's job is to augment your [Porchfest](https://www.porchfest.org/) experience [(read more about Porchfest here)](https://en.wikipedia.org/wiki/Porchfest). After selecting your town's Porchfest, during the hours of the festival, this app will tell you what band you are nearby. Rather than scrambling to find the schedule online and cross-referencing the porch address, you now have the freedom to wander where the music takes you and quickly find out what performer you're enjoying. This app was created for my Ithaca College Senior Project course.
+This app's job is to augment your [Porchfest](https://www.porchfest.org/) experience [(read more about Porchfest here)](https://en.wikipedia.org/wiki/Porchfest). The app isn't deployed as of October 2026, however version 1 is expected to deploy in December 2026. Here's how version 2 will work: after selecting your town's Porchfest, during the hours of the festival, this app will tell you what band you are nearby. Rather than scrambling to find the schedule online and cross-referencing the porch address, festival-goers now have the freedom to wander where the music takes them and quickly find out what performers they're enjoying. 
+
+This app was created during my senior year in undergrad at Ithaca College under the mentorship of Computer Science professor Doug Turnbull.
 
 
 ## Tools
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app). I utilized LLMs to research and choose the right framework for this app and landed on Expo because of the simplicity in deploying both to Apple and Android IOS.
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app). I utilized LLMs to research and select the right framework for this app and landed on Expo because of the simplicity in deploying both to Apple and Android OS.
 
-The development of this app was part mobile development exploration, part local-music passion project, part agentic programming experimentation. Because my baseline knowledge of mobile development and the tools needed for it were minimal, I utilized LLMs to figure out the folder structure and plugins needed to build this app.
+The development of this app was part mobile development exploration, part local-music passion project, part agentic experimentation. Because my baseline knowledge of mobile development and the tools needed for it were minimal, I utilized LLMs to figure out the folder structure and plugins needed to build this app.
+
+## Downloading the app
+
+Coming soon! The app is not yet deployed to any app stores.
 
 ## Get started
 
