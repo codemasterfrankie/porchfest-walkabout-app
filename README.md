@@ -2,8 +2,7 @@
 
 This app's job is to augment your [Porchfest](https://www.porchfest.org/) experience [(read more about Porchfest here)](https://en.wikipedia.org/wiki/Porchfest). The app isn't deployed as of October 2026, however version 1 is expected to deploy in December 2026. Here's how version 2 will work: after selecting your town's Porchfest, during the hours of the festival, this app will tell you what band you are nearby. Rather than scrambling to find the schedule online and cross-referencing the porch address, festival-goers now have the freedom to wander where the music takes them and quickly find out what performers they're enjoying. 
 
-This app was created during my senior year in undergrad at Ithaca College under the mentorship of Computer Science professor Doug Turnbull.
-
+This app was created during my senior year in undergrad at Ithaca College under the mentorship of Computer Science professor Doug Turnbull. My role in this project is as an HCI designer and front- and back-end developer. I decided the implementation tools, languages, and frameworks and was the sole contributor to code.
 
 ## Tools
 
