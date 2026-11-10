@@ -24,11 +24,13 @@ const SET_LENGTH_MINUTES = 60; // sets start on the hour, so assume each one las
 
 // for demo
 const DEMO_MODE = true; // set to false during real festival
-const DEMO_TIME = new Date('2026-09-20T12:10'); // 12:10
+const DEMO_TIME = new Date('2026-09-20T06:00:00'); // before porchfest
+//const DEMO_TIME = new Date('2026-09-20T12:10:00'); // 12:10
 //const DEMO_TIME = new Date('2026-09-20T14:10:00'); // 2:10pm
 //const DEMO_TIME = new Date('2026-09-20T16:10:00'); // 4:10pm
 // below: no one playing at 920 n Tioga at 1, so program chooses neighbor at 914 (26 meters away)
-//const DEMO_TIME = new Date('2026-09-20T13:10:00'); //
+//const DEMO_TIME = new Date('2026-09-20T13:10:00');
+//const DEMO_TIME = new Date('2026-09-20T20:00:00'); // after porchfest
 
 const DEMO_COORDS = { latitude: 42.4505498, longitude: -76.4976759}; // 920 N Tioga
 
