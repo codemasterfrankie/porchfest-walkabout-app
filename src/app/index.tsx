@@ -21,6 +21,10 @@ const FESTIVAL_START = new Date(`${FESTIVAL_DAY}T12:00:00`);
 const FESTIVAL_END = new Date(`${FESTIVAL_DAY}T18:00:00`);
 const PROXIMITY_THRESHOLD_METERS = 50; // setting the distance from porch
 const SET_LENGTH_MINUTES = 60; // sets start on the hour, so assume each one lasts an hour
+
+// for demo
+const DEMO_MODE = true; // set to false during real festival
+const DEMO_COORDS = { latitude: 42.4450934, longitude: -76.5009152}; // 111 1st st, Analog Breakdown
  
 // true if this performance is happening at time "now"
 function isPlayingNow(startTime: string, now: Date): boolean {
@@ -72,9 +76,13 @@ export default function Index() {
   if (now > FESTIVAL_END) {
     return <SeeYouNextYearScreen />;
   }
+
+  // for demo
+  // if demo mode is on, use DEMO_COORDS, else use location?.coords
+  const coords = DEMO_MODE ? DEMO_COORDS : location?.coords;
  
   // festival is active, find the closest porch with a band playing right now
-  if (location) {
+  if (coords) {
     let nearestPorch: Porch | null = null;
     let nearestDistance = Infinity;
  
@@ -82,8 +90,8 @@ export default function Index() {
       if (!isPlayingNow(porch.startTime, now)) continue; // skip bands not playing now
  
       const distance = getDistanceInMeters(
-        location.coords.latitude,
-        location.coords.longitude,
+        coords.latitude,
+        coords.longitude,
         porch.latitude,
         porch.longitude
       ); // calculates distance from user to porch
