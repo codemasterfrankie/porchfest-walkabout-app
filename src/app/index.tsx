@@ -15,7 +15,7 @@ import { PORCHES, type Porch } from '../data/porches'; // gets porch methods and
 import { getDistanceInMeters } from '../utils/distance'; // gets distance function
  
 // below: type-checked Date objects
-// actual start and end date for ithaca porchfest 2026
+// actual start and end date for ithaca porchfest 2026, hard coded
 const FESTIVAL_DAY = '2026-09-20';
 const FESTIVAL_START = new Date(`${FESTIVAL_DAY}T12:00:00`);
 const FESTIVAL_END = new Date(`${FESTIVAL_DAY}T18:00:00`);
@@ -24,7 +24,15 @@ const SET_LENGTH_MINUTES = 60; // sets start on the hour, so assume each one las
 
 // for demo
 const DEMO_MODE = true; // set to false during real festival
-const DEMO_COORDS = { latitude: 42.4450934, longitude: -76.5009152}; // 111 1st st, Analog Breakdown
+const DEMO_TIME = new Date('2026-09-20T12:10'); // 12:10
+//const DEMO_TIME = new Date('2026-09-20T14:10:00'); // 2:10pm
+//const DEMO_TIME = new Date('2026-09-20T16:10:00'); // 4:10pm
+// below: no one playing at 920 n Tioga at 1, so program chooses neighbor at 914 (26 meters away)
+//const DEMO_TIME = new Date('2026-09-20T13:10:00'); //
+
+const DEMO_COORDS = { latitude: 42.4505498, longitude: -76.4976759}; // 920 N Tioga
+
+//const DEMO_COORDS = { latitude: 42.4450934, longitude: -76.5009152}; // 111 1st st, Analog Breakdown
  
 // true if this performance is happening at time "now"
 function isPlayingNow(startTime: string, now: Date): boolean {
@@ -65,8 +73,8 @@ export default function Index() {
   }, []);
   // the [] is the "dependency array", controls when the code inside useEffect runs
  
-  // hard coded for debugging -- switch to `new Date()` for the real clock
-  const now = new Date('2026-09-20T15:10:00');
+  // right now
+  const now = DEMO_MODE ? DEMO_TIME : new Date();
  
   // checking current time with festival start and end times, returning the correct screen
   if (now < FESTIVAL_START) {
