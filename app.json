@@ -21,7 +21,13 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false,
-      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "package": "com.codemasterfrankie.porchfestwalkabout"
     },
     "web": {
       "output": "static",
@@ -38,10 +44,10 @@
         }
       ],
       [
-      "expo-location",
-      {
-        "locationAlwaysAndWhenInUsePermission": "Porchfest Walkabout uses your location to tell you which porch you're near."
-      }
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Porchfest Walkabout uses your location to tell you which porch you're near."
+        }
       ]
     ],
     "experiments": {
