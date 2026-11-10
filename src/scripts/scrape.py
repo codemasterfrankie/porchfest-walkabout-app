@@ -2,7 +2,7 @@
 Scrape the Porchfest 2026 performers page into clean, structured records.
 
 Install:  pip install requests beautifulsoup4
-Run:      python porchfest_scraper.py
+Run:      python scrape.py
 Output:   performers.json (a list of dicts, one per performer)
 """
 # downloads performers page from ithaca's porchfest website
