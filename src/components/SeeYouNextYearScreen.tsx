@@ -1,3 +1,5 @@
+// screen when festival is over (v1)
+
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function SeeYouNextYearScreen() {

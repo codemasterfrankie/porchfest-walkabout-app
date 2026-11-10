@@ -1,5 +1,6 @@
 // math for calculating distance between 2 gps points,
-// uses "haversine formula", dostance on sphere
+// uses "haversine formula", distance on sphere
+// no react, just math!
 
 // returns distance in meters between 2 lat/long points
 export function getDistanceInMeters(

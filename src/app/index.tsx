@@ -1,3 +1,11 @@
+// brain of the app!
+// this is the hope screen: asks for location permission,
+// gets gps updates every 10 meters walked,
+// checks current time against festival time, and
+// loops over all performers playing now and finds nearest porch
+// if the nearest porch isn't within 50 meters, not shown
+// otherwise that band's screen is snown
+
 import * as Location from 'expo-location'; // location package for dealing with user location
 import { useEffect, useState } from 'react';
 import BandScreen from '../components/BandScreen'; // gets the band screen component

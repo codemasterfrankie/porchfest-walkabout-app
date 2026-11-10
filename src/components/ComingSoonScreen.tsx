@@ -1,3 +1,5 @@
+// screen shown before festival start
+
 import { StyleSheet, Text, View } from 'react-native';
 // imports building blocks from react native
 // View is a container, like <div>

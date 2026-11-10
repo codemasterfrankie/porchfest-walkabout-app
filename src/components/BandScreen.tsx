@@ -1,3 +1,6 @@
+// how the band screen gets shown
+// takes only "bandname" as an argumant
+
 import { StyleSheet, Text, View } from 'react-native';
 
 // setting attributes of band screen

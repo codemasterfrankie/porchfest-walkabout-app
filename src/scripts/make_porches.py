@@ -4,6 +4,9 @@ Turn performers_geo.json into src/data/porches.ts for the app.
 Run from anywhere:  python make_porches.py
 (Keep this file in src/scripts/ next to performers_geo.json.)
 """
+
+# converts the performers_geo.json into an array of porches, sorted by time
+# converts from 12hr to 24hr time format
  
 import json
 import re

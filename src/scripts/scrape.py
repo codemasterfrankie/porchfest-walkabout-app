@@ -5,6 +5,11 @@ Install:  pip install requests beautifulsoup4
 Run:      python porchfest_scraper.py
 Output:   performers.json (a list of dicts, one per performer)
 """
+# downloads performers page from ithaca's porchfest website
+# uses beautifulsoup to get name, time, address, map link, website, and 
+# description for each performer
+
+# finds each performer through google maps link
 
 import json
 import re

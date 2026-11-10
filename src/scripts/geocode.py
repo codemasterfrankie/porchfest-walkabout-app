@@ -11,6 +11,11 @@ is only looked up once, and results are cached in geocode_cache.json so re-runs
 are instant.
 """
 
+# turns addresses into coordinates
+# uses free service
+# caches resultes in geocode_cache.json, making reruns super fasts
+# also retries difficult addresses (3rd st vs third st)
+
 import json
 import os
 from urllib.parse import unquote_plus

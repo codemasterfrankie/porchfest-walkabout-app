@@ -1,3 +1,6 @@
+# not currently connected to app
+# experimentation
+
 from curl_cffi import requests as cf_requests
 from bs4 import BeautifulSoup
 
