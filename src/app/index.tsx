@@ -10,7 +10,7 @@ import * as Location from 'expo-location'; // location package for dealing with 
 import { useEffect, useState } from 'react';
 import BandScreen from '../components/BandScreen'; // gets the band screen component
 import ComingSoonScreen from '../components/ComingSoonScreen'; // gets the coming soon screen component
-import SeeYouNextYearScreen from '../components/SeeYouNextYearScreen'; // gets the see you next year screen component
+import SeeYouNextYearScreen from '../components/SeeYouNextYearScreen';
 import { PORCHES, type Porch } from '../data/porches'; // gets porch methods and data
 import { getDistanceInMeters } from '../utils/distance'; // gets distance function
  
@@ -48,7 +48,10 @@ export default function Index() {
   // must have this so TS doesn't guess the type from the initial value
   const [location, setLocation] = useState<Location.LocationObject | null>(null);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
- 
+
+  // keeping track of porches the user has visited
+  const [visitedIds, setVisitedIds] = useState<string[]>([]);
+
   useEffect(() => {
     let subscription: Location.LocationSubscription | null = null;
  
@@ -77,35 +80,24 @@ export default function Index() {
  
   // right now
   const now = DEMO_MODE ? DEMO_TIME : new Date();
- 
-  // checking current time with festival start and end times, returning the correct screen
-  if (now < FESTIVAL_START) {
-    return <ComingSoonScreen />;
-  }
- 
-  if (now > FESTIVAL_END) {
-    return <SeeYouNextYearScreen />;
-  }
-
-  // for demo
   // if demo mode is on, use DEMO_COORDS, else use location?.coords
   const coords = DEMO_MODE ? DEMO_COORDS : location?.coords;
- 
+  const festivalOn = now >= FESTIVAL_START && now <= FESTIVAL_END;
+
   // festival is active, find the closest porch with a band playing right now
-  if (coords) {
+  let nearbyPorch: Porch | null = null;
+  if (festivalOn && coords) {
     let nearestPorch: Porch | null = null;
     let nearestDistance = Infinity;
  
     for (const porch of PORCHES) {
       if (!isPlayingNow(porch.startTime, now)) continue; // skip bands not playing now
- 
       const distance = getDistanceInMeters(
         coords.latitude,
         coords.longitude,
         porch.latitude,
         porch.longitude
       ); // calculates distance from user to porch
- 
       if (distance < nearestDistance) {
         nearestPorch = porch;
         nearestDistance = distance;
@@ -115,11 +107,33 @@ export default function Index() {
  
     // returns band name of porch user is close to
     if (nearestPorch && nearestDistance <= PROXIMITY_THRESHOLD_METERS) {
-      return <BandScreen bandName={nearestPorch.bandName} />;
+      nearbyPorch = nearestPorch;
     }
   }
- 
-  // if during fest but not near any porch
+
+  // tracking bands user is near
+  const nearbyId = nearbyPorch?.id;
+  useEffect(() => {
+    if (nearbyId) {
+      setVisitedIds((prev) => (prev.includes(nearbyId) ? prev :
+    [...prev, nearbyId]));
+    }
+  }, [nearbyId]);
+
+  // screen selection
+  if (now < FESTIVAL_START) {
+    return <ComingSoonScreen />;
+  }
+  if (now > FESTIVAL_END) {
+    const visitedPorches = PORCHES.filter((porch) => visitedIds.includes(porch.id));
+    return <SeeYouNextYearScreen visitedPorches = {visitedPorches} />;
+  }
+  if (nearbyPorch) {
+    return <BandScreen bandName={nearbyPorch.bandName} />;
+  }
   return <ComingSoonScreen />;
+
+  // todo: during fest but not near a
+
 }
  

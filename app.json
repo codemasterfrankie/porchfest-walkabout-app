@@ -10,7 +10,7 @@
     "ios": {
       "icon": "./assets/expo.icon",
       "infoPlist": {
-        "NSLocationWhenInUseUsageDescription": "Porchfest Walkabout uses your location to tell you which porch you're near."
+        "NSLocationWhenInUseUsageDescription": "Porchfest Walkabout uses your device's location to find out which porches you're near."
       }
     },
     "android": {
@@ -46,7 +46,7 @@
       [
         "expo-location",
         {
-          "locationAlwaysAndWhenInUsePermission": "Porchfest Walkabout uses your location to tell you which porch you're near."
+          "locationAlwaysAndWhenInUsePermission": "Porchfest Walkabout uses your device's location to find out which porches you're near."
         }
       ]
     ],
