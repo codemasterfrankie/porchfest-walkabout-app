@@ -33,8 +33,8 @@ const DEMO_TIME = new Date('2026-09-20T06:00:00'); // before porchfest
 // below: no one playing at 920 n Tioga at 1, so program chooses neighbor at 914 (26 meters away)
 //const DEMO_TIME = new Date('2026-09-20T13:10:00');
 //const DEMO_TIME = new Date('2026-09-20T20:00:00'); // after porchfest
-const DEMO_COORDS = { latitude: 42.4505498, longitude: -76.4976759}; // 920 N Tioga
-//const DEMO_COORDS = { latitude: 42.4450934, longitude: -76.5009152}; // 111 1st st, Analog Breakdown
+//const DEMO_COORDS = { latitude: 42.4505498, longitude: -76.4976759}; // 920 N Tioga
+const DEMO_COORDS = { latitude: 42.4450934, longitude: -76.5009152}; // 111 1st st, Analog Breakdown
  
 /*
 Description: using the current time, checks if a band is playing right now and returns true or false
@@ -129,17 +129,18 @@ export default function Index() {
     }
   }, [closestPorchId]);
 
+  // screen logic
   if (now < FESTIVAL_START) {
-    return <ComingSoonScreen />;
+    return <ComingSoonScreen/>;
   }
   if (now > FESTIVAL_END) {
     const visitedPorches = PORCHES.filter((porch) => visitedIds.includes(porch.id));
-    return <SeeYouNextYearScreen visitedPorches = {visitedPorches} />;
+    return <SeeYouNextYearScreen visitedPorches = {visitedPorches}/>;
   }
   if (closestPorch) {
-    return <BandScreen bandName={closestPorch.bandName} />;
+    return <BandScreen bandName = {closestPorch.bandName} name = {closestPorch.name}/>;
   }
-  return <ComingSoonScreen />;
+  return <ComingSoonScreen/>;
 
   // todo: during fest but not near a porch, show 4th screen
 
