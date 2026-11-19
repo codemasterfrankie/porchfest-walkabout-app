@@ -10,7 +10,7 @@ type BandScreenProps = {
 };
 
 // function for displaying the band information
-export default function BandScreen({ bandName, name }: BandScreenProps) {
+export default function BandScreen({bandName, name}: BandScreenProps) {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>You're near:</Text>
