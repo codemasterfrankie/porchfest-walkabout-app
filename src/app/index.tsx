@@ -108,7 +108,7 @@ export default function Index() {
         shortestDistance = distance;
       }
     }
-    console.log('Nearest porch with music:', nearbyPorch?.name, Math.round(shortestDistance), 'meters away'); // for debugging
+    console.log('Nearest porch with music:', nearbyPorch?.address, Math.round(shortestDistance), 'meters away'); // for debugging
  
     // returns band name of porch user is close to
     if (nearbyPorch && shortestDistance <= PROXIMITY_THRESHOLD_METERS) {
