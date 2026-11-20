@@ -87,10 +87,10 @@ def main():
         if not coords:
             missing.append(p["address"])
 
-    with open("performers_geo.json", "w", encoding="utf-8") as f:
+    with open("performers.json", "w", encoding="utf-8") as f:
         json.dump(performers, f, indent=2, ensure_ascii=False)
 
-    print(f"\nSaved performers_geo.json. {len(missing)} without coordinates.")
+    print(f"\nSaved updated performers.json. {len(missing)} without coordinates.")
     for a in sorted(set(missing)):
         print("  -", a, "(add it to geocode_cache.json by hand as [lat, lon])")
 

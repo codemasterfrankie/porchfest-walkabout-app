@@ -14,7 +14,7 @@ from pathlib import Path
 
 # for determining where porches.ts file is created
 HERE = Path(__file__).resolve().parent
-INPUT = HERE / "performers_geo.json"
+INPUT = HERE / "performers.json"
 OUTPUT = HERE.parent / "data" / "porches.ts"
  
 def to_24h(t: str) -> str:
