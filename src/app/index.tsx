@@ -138,7 +138,7 @@ export default function Index() {
     return <SeeYouNextYearScreen visitedPorches = {visitedPorches}/>;
   }
   if (closestPorch) {
-    return <BandScreen bandName = {closestPorch.bandName} name = {closestPorch.name}/>;
+    return <BandScreen bandName = {closestPorch.bandName} address = {closestPorch.address}/>;
   }
   return <ComingSoonScreen/>;
 

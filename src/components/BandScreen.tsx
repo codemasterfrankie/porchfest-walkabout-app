@@ -6,16 +6,16 @@ import { StyleSheet, Text, View } from 'react-native';
 // setting attributes of band screen
 type BandScreenProps = {
     bandName: string;
-    name: string; // actually address, should rename
+    address: string;
 };
 
 // function for displaying the band information
-export default function BandScreen({bandName, name}: BandScreenProps) {
+export default function BandScreen({bandName, address}: BandScreenProps) {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>You're near:</Text>
             <Text style={styles.bandName}>{bandName}</Text>
-            <Text style={styles.address}>{name}</Text>
+            <Text style={styles.address}>{address}</Text>
         </View>
     );
 }

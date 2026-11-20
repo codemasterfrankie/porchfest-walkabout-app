@@ -1,33 +1,30 @@
 """
 Turn performers_geo.json into src/data/porches.ts for the app.
+- converts the performers_geo.json into an array of porches, sorted by time
+- converts from 12hr to 24hr time format
  
 Run from anywhere:  python make_porches.py
 (Keep this file in src/scripts/ next to performers_geo.json.)
 """
 
-# converts the performers_geo.json into an array of porches, sorted by time
-# converts from 12hr to 24hr time format
- 
 import json
 import re
 from datetime import datetime
 from pathlib import Path
- 
+
+# for determining where porches.ts file is created
 HERE = Path(__file__).resolve().parent
 INPUT = HERE / "performers_geo.json"
 OUTPUT = HERE.parent / "data" / "porches.ts"
- 
  
 def to_24h(t: str) -> str:
     # "4:00 PM" -> "16:00"
     return datetime.strptime(t.strip().upper(), "%I:%M %p").strftime("%H:%M")
  
- 
 def ts_str(s) -> str:
-    # json.dumps gives a properly escaped, quoted string that's also valid TypeScript
+    # json.dumps gives a properly escaped/quoted string that's also valid TypeScript
     return "null" if s is None else json.dumps(s, ensure_ascii=False)
- 
- 
+
 def main():
     performers = json.loads(INPUT.read_text(encoding="utf-8"))
     skipped = [p["name"] for p in performers if p.get("lat") is None]
@@ -41,7 +38,7 @@ def main():
         "// one performance: a band playing at a porch at a certain time",
         "export type Porch = {",
         "    id: string;",
-        "    name: string;        // porch address, e.g. \"435 N Geneva St\"",
+        "    address: string;        // porch address, e.g. \"435 N Geneva St\"",
         "    bandName: string;",
         "    startTime: string;   // 24-hour \"HH:MM\" on festival day, e.g. \"16:00\"",
         "    description: string;",
@@ -57,7 +54,7 @@ def main():
         lines += [
             "    {",
             f"        id: '{i}',",
-            f"        name: {ts_str(address)},",
+            f"        address: {ts_str(address)},",
             f"        bandName: {ts_str(p['name'])},",
             f"        startTime: '{to_24h(p['time'])}',",
             f"        description: {ts_str(p['description'])},",
